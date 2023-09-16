@@ -153,7 +153,7 @@ __zplug::core::core::prepare()
 
     # Run compinit if zplug comp file hasn't load
     if (( ! $+functions[_zplug] )); then
-        compinit -C -d "$ZPLUG_HOME/zcompdump"
+        compinit -u -C -d "$ZPLUG_HOME/zcompdump"
     fi
 }
 
