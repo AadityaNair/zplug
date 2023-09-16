@@ -14,7 +14,7 @@ __zplug::log::write::debug()
 
 __zplug::log::write::info()
 {
-    __zplug::job::handle::flock --escape \
-        "$_zplug_log[trace]" \
-        "$(__zplug::log::format::with_json "INFO" "$argv[@]")"
+    # __zplug::job::handle::flock --escape \
+        # "$_zplug_log[trace]" \
+        # "$(__zplug::log::format::with_json "INFO" "$argv[@]")"
 }

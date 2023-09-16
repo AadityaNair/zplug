@@ -8,9 +8,9 @@ __zplug::job::polling::periodic()
         if [[ -o monitor ]]; then
             return 0
         fi
-        if setopt monitor; then
-            __zplug::log::write::info "turn monitor on"
-        fi
+        #if setopt monitor; then
+            #__zplug::log::write::info "turn monitor on"
+        #fi
     fi
 }
 
